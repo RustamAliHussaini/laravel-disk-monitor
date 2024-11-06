@@ -2,9 +2,9 @@
 
 namespace RustamAliHussaini\LaravelDiskMonitor;
 
+use RustamAliHussaini\LaravelDiskMonitor\Commands\LaravelDiskMonitorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RustamAliHussaini\LaravelDiskMonitor\Commands\LaravelDiskMonitorCommand;
 
 class LaravelDiskMonitorServiceProvider extends PackageServiceProvider
 {

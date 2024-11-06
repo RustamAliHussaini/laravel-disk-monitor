@@ -17,7 +17,7 @@ class RecordDiskMetricsCommandTest extends TestCase
 
     public function it_will_record_zero_files_for_empty_disks()
     {
-        Storage::disk('local')->put('test.txt','test');
+        Storage::disk('local')->put('test.txt', 'test');
 
         $this
             ->artisan(LaravelDiskMonitorCommand::class)
@@ -25,6 +25,4 @@ class RecordDiskMetricsCommandTest extends TestCase
 
         $this->assertCount(1, DiskMonitorEntry::get());
     }
-
-
 }
